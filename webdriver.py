@@ -35,7 +35,14 @@ current_window = driver.current_window_handle
 # Switch to the new window or tab
 driver.switch_to.window(driver.window_handles[-1])
 
-# Continue with other actions on the new window or tab
+# Navigating back to the previous page
+driver.back()
+
+# Navigating forward to the next page
+driver.forward()
+
+# Set the browser window size to a specific width and height
+driver.set_window_size(800, 600)
 
 # Close the browser
 driver.quit()
