@@ -2,11 +2,51 @@
 <html>
 <head>
     <title>WEB-DRIVER</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .title {
+            color: #333;
+            font-size: 28px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
     <script src="myscript.js"></script>
 </head>
 <body>
-    <h1>Selenium Project</h1>
-    <button id="click_button" onclick="myFunction()">Click Me</button>
-    <input type="text" id="input_field" placeholder="Enter text">
+    <div class="container">
+        <h1 class="title">Selenium Project</h1>
+        <div class="content">
+            <input type="text" id="input_field" placeholder="Enter text">
+            <button id="click_button" onclick="myFunction()">Click Me</button>
+        </div>
+    </div>
 </body>
 </html>
