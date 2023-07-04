@@ -29,3 +29,13 @@ driver.save_screenshot("screenshot.png")
 
 # Store the current window handle
 current_window = driver.current_window_handle
+
+# Perform an action that opens a new window or tab
+
+# Switch to the new window or tab
+driver.switch_to.window(driver.window_handles[-1])
+
+# Continue with other actions on the new window or tab
+
+# Close the browser
+driver.quit()
